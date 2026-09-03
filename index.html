@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rahmah Abdulkarim — applied mathematician and quantitative researcher working across medical imaging, statistical modeling, and data systems.">
+  <meta name="theme-color" content="#10211c">
+  <meta property="og:title" content="Rahmah Abdulkarim | Applied Mathematics & Research">
+  <meta property="og:description" content="Research, data systems, and models built to answer difficult real-world questions.">
+  <title>Rahmah Abdulkarim | Applied Mathematics & Research</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Rahmah Abdulkarim, home"><span>RA</span></a>
+    <nav aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul id="site-nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Applied mathematics · research · data systems</p>
+        <h1 id="hero-title">I turn difficult data into <em>defensible answers.</em></h1>
+        <p class="hero-intro">I’m Rahmah Abdulkarim, an applied mathematician in Houston. I build reproducible analyses and computational tools across healthcare, geospatial research, and decision-focused analytics.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="assets/rahmah-abdulkarim-cv.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+      <div class="hero-panel reveal" aria-label="Selected outcomes">
+        <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="panel-label">Evidence, not decoration</p>
+        <div class="metric"><strong data-count="63.8">0</strong><span>% of invalid or unmatched seabed records resolved</span></div>
+        <div class="metric"><strong data-count="104368">0</strong><span>edges in a spatial graph built for regional evaluation</span></div>
+        <div class="metric"><strong data-count="17345">0</strong><span>participants in a leakage-controlled health study</span></div>
+      </div>
+      <a class="scroll-cue" href="#work"><span>Scroll to investigate</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="section-shell work" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-title">Questions first.<br>Methods in service of them.</h2>
+        <p>Filter by the kind of problem you want to see.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" type="button">All work</button>
+        <button class="filter" data-filter="health" type="button">Health</button>
+        <button class="filter" data-filter="spatial" type="button">Spatial</button>
+        <button class="filter" data-filter="systems" type="button">Data systems</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-category="health systems">
+          <div class="project-index">01</div>
+          <div class="project-content">
+            <p class="project-type">Graduate research · Medical imaging</p>
+            <h3>DICOM-native cardiac measurement</h3>
+            <p>Reconnected echocardiographic model outputs to source DICOM geometry and clinical reference data to investigate measurement error, calibration, and agreement.</p>
+            <ul class="project-tags" aria-label="Methods"><li>Python</li><li>DICOM</li><li>Model evaluation</li><li>Clinical data</li></ul>
+            <div class="project-result"><strong>+5.40 → +0.03</strong><span>percentage-point bias after out-of-sample evaluation</span></div>
+          </div>
+          <button class="text-link project-detail" type="button" data-project="dicom">Read the case note <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="spatial systems">
+          <div class="project-index">02</div>
+          <div class="project-content">
+            <p class="project-type">Google-sponsored REU · Geospatial modeling</p>
+            <h3>Seabed spatial graph analysis</h3>
+            <p>Converted irregular ocean-bed measurements into spatially indexed model inputs and tested whether neighborhood structure improved prediction across held-out regions.</p>
+            <ul class="project-tags" aria-label="Methods"><li>Python</li><li>Graphs</li><li>Geospatial validation</li></ul>
+            <div class="project-result"><strong>6.6%</strong><span>lower held-out grain-size RMSE than the train-mean baseline</span></div>
+          </div>
+          <button class="text-link project-detail" type="button" data-project="seabed">Read the case note <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="health">
+          <div class="project-index">03</div>
+          <div class="project-content">
+            <p class="project-type">Population health · Predictive modeling</p>
+            <h3>Prediabetes risk and subgroup performance</h3>
+            <p>Built a temporal evaluation workflow from NHANES data, excluding outcome-defining measurements from predictors and auditing results across demographic groups.</p>
+            <ul class="project-tags" aria-label="Methods"><li>Python</li><li>Statistics</li><li>Subgroup audit</li></ul>
+            <div class="project-result"><strong>0.793</strong><span>held-out AUROC with performance reviewed across 15 groups</span></div>
+          </div>
+          <button class="text-link project-detail" type="button" data-project="diabetes">Read the case note <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="systems">
+          <div class="project-index">04</div>
+          <div class="project-content">
+            <p class="project-type">Independent project · Sports intelligence</p>
+            <h3>Football scouting intelligence system</h3>
+            <p>Designed an end-to-end StatsBomb pipeline from raw JSON through normalized MySQL tables, reusable SQL features, and standardized player profiles.</p>
+            <ul class="project-tags" aria-label="Methods"><li>Python</li><li>MySQL</li><li>ETL</li><li>Clustering baseline</li></ul>
+            <div class="project-result"><strong>12 tables</strong><span>in a normalized event-level database</span></div>
+          </div>
+          <a class="text-link" href="assets/football-scouting-case-study.pdf" target="_blank" rel="noopener">View the case study <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">Research shaped by rigor and real constraints.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><time>2024–2026</time><div><h3>Graduate Research Assistant</h3><p>Rice University · in collaboration with Houston Methodist</p><p>Investigated failure modes in echocardiographic measurement workflows, integrated clinical constraints into evaluation, and maintained reproducible code for technical and clinical collaborators.</p></div></article>
+        <article class="timeline-item reveal"><time>2023</time><div><h3>Research Assistant, Google-sponsored REU</h3><p>Rice University</p><p>Designed spatial data transformations and controlled model comparisons for irregular ocean-bed measurements across geographically separated survey blocks.</p></div></article>
+        <article class="timeline-item reveal"><time>2023</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University</p><p>Developed predictive models for prediabetes risk and examined how performance and risk relationships varied across population subgroups.</p></div></article>
+        <article class="timeline-item reveal"><time>2022</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University · Department of Mathematics</p><p>Implemented supervised clustering in MATLAB to extract reference tissue regions in PET imaging studies.</p></div></article>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-copy reveal">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">A mathematical lens,<br>with an audience in mind.</h2>
+        <p>My training spans applied mathematics, operations research, statistics, and computer science. I care about the full analytical chain: whether the data represent the question, whether the evaluation reflects deployment, and whether the result can be explained without overstating what it proves.</p>
+        <p>Teaching more than 95 students sharpened the same skill I use in research: meeting people where they are and making technical ideas useful.</p>
+      </div>
+      <div class="credentials reveal">
+        <div><span>Education</span><h3>M.A., Computational & Applied Mathematics & Operations Research</h3><p>Rice University · 2026</p></div>
+        <div><span>Foundation</span><h3>B.S., Mathematics</h3><p>Howard University · Summa Cum Laude · 2024</p></div>
+        <div><span>Selected distinctions</span><p>Capstone Scholar · Phi Beta Kappa · Pi Mu Epsilon · Artishia & Frederick Jordan Scholar</p></div>
+      </div>
+      <div class="skills reveal" aria-label="Technical skills">
+        <p class="eyebrow">Working toolkit</p>
+        <div class="skill-cloud"><span>Python</span><span>R</span><span>SQL</span><span>MATLAB</span><span>C++</span><span>Statistical inference</span><span>Model evaluation</span><span>Feature engineering</span><span>MySQL</span><span>Git</span><span>Docker</span><span>Linux</span><span>Tableau</span><span>Medical imaging</span><span>Geospatial data</span></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 id="contact-title" class="reveal">Have a hard question?<br><em>Let’s make it tractable.</em></h2>
+      <div class="contact-row reveal">
+        <a href="mailto:rahmahabdulkarim@yahoo.com">rahmahabdulkarim@yahoo.com <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/rahmahh53" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="assets/rahmah-abdulkarim-cv.pdf" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Rahmah Abdulkarim</span><span>Houston, Texas</span><span id="year"></span></footer>
+
+  <dialog class="project-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Close project details">×</button>
+    <p class="eyebrow" id="modal-kicker"></p>
+    <h2 id="modal-title"></h2>
+    <div id="modal-body"></div>
+  </dialog>
+</body>
+</html>
