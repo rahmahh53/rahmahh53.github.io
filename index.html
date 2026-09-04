@@ -22,6 +22,7 @@
         <li><a href="#work">Work</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#contact">Recognition</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -60,7 +61,7 @@
         <button class="filter active" data-filter="all" type="button">All work</button>
         <button class="filter" data-filter="health" type="button">Health</button>
         <button class="filter" data-filter="spatial" type="button">Spatial</button>
-        <button class="filter" data-filter="systems" type="button">Data systems</button>
+        <button class="filter" data-filter="systems" type="button">Data Engineering</button>
       </div>
 
       <div class="project-grid">
@@ -114,18 +115,191 @@
       </div>
     </section>
 
-    <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Experience</p>
-        <h2 id="experience-title">Research shaped by rigor and real constraints.</h2>
-      </div>
+  <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+  <div class="section-heading reveal">
+    <p class="eyebrow">Experience</p>
+    <h2 id="experience-title">Research, teaching, leadership, and service.</h2>
+    <p>A complete record of the experiences that have shaped how I investigate problems, communicate findings, and work with others.</p>
+  </div>
+
+  <div class="experience-groups">
+
+    <details class="experience-group reveal" open>
+      <summary><span>Research Experience</span><span>04 roles</span></summary>
       <div class="timeline">
-        <article class="timeline-item reveal"><time>2024–2026</time><div><h3>Graduate Research Assistant</h3><p>Rice University · in collaboration with Houston Methodist</p><p>Investigated failure modes in echocardiographic measurement workflows, integrated clinical constraints into evaluation, and maintained reproducible code for technical and clinical collaborators.</p></div></article>
-        <article class="timeline-item reveal"><time>2023</time><div><h3>Research Assistant, Google-sponsored REU</h3><p>Rice University</p><p>Designed spatial data transformations and controlled model comparisons for irregular ocean-bed measurements across geographically separated survey blocks.</p></div></article>
-        <article class="timeline-item reveal"><time>2023</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University</p><p>Developed predictive models for prediabetes risk and examined how performance and risk relationships varied across population subgroups.</p></div></article>
-        <article class="timeline-item reveal"><time>2022</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University · Department of Mathematics</p><p>Implemented supervised clustering in MATLAB to extract reference tissue regions in PET imaging studies.</p></div></article>
+
+        <article class="timeline-item">
+          <time>Aug 2024–May 2026</time>
+          <div>
+            <h3>Graduate Research Assistant</h3>
+            <p>Rice University · Houston, Texas · In collaboration with Houston Methodist</p>
+            <ul>
+              <li>Analyzed model failure modes by linking prediction errors to input characteristics and distributional variation, introducing data filtering and training adjustments to stabilize performance across varied conditions.</li>
+              <li>Integrated clinical constraints into feature engineering and evaluation criteria so model outputs reflected physiologically meaningful behavior beyond optimized numerical metrics.</li>
+              <li>Documented preprocessing, modeling, and evaluation workflows in reproducible, version-controlled code for collaboration with technical and clinical stakeholders.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>May–Aug 2023</time>
+          <div>
+            <h3>REU Research Assistant, Google-Sponsored</h3>
+            <p>Rice University · Houston, Texas</p>
+            <ul>
+              <li>Converted 42,401 irregular ocean-bed records into 15,345 analysis-ready nodes across 34 geographic survey blocks, engineering 19 model features and a 104,368-edge spatial graph while eliminating 63.8% of invalid, non-surface, duplicate, or unmatched records.</li>
+              <li>Constructed and evaluated seven spatial graph definitions using 5–20-neighbor kNN and 10–50 km radius connectivity, quantifying mean degree, isolated locations, and geographic coverage across all 34 survey blocks.</li>
+              <li>Reduced spatially held-out grain-size RMSE from 2.245 for a train-mean baseline to 2.097 with graph-augmented gradient boosting, a 6.6% reduction, by incorporating aggregated neighborhood features from a 10-neighbor spatial graph.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>Feb–Dec 2023</time>
+          <div>
+            <h3>Undergraduate Research Assistant</h3>
+            <p>Howard University · Washington, DC</p>
+            <ul>
+              <li>Created an analysis-ready cohort of 17,345 adults from 39,156 participants and constructed 18 predictors for prediabetes-risk modeling without using outcome-defining measurements as predictors.</li>
+              <li>Compared five predictive models using a held-out temporal sample and evaluated discrimination, precision-recall performance, calibration, and subgroup behavior.</li>
+              <li>Achieved a held-out AUROC of 0.793 and AUPRC of 0.743, with performance reviewed across 15 demographic groups.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>Aug–Dec 2022</time>
+          <div>
+            <h3>Undergraduate Research Assistant, Department of Mathematics</h3>
+            <p>Howard University · Washington, DC</p>
+            <ul>
+              <li>Developed and implemented a supervised clustering algorithm in MATLAB for the automatic extraction of reference-tissue regions in PET studies.</li>
+              <li>Contributed to research on improving PET imaging with [11C]-(R)-PK11195 for assessing microglial activation in the human brain.</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
-    </section>
+    </details>
+
+    <details class="experience-group reveal">
+      <summary><span>Teaching Experience</span><span>04 roles</span></summary>
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <time>May–Aug 2025</time>
+          <div>
+            <h3>Independent Mathematics Tutor, Calculus</h3>
+            <p>Private · Houston, Texas</p>
+            <ul>
+              <li>Designed and delivered a summer calculus curriculum for junior-high students, tailoring lesson plans to each student’s preparation and learning pace.</li>
+              <li>Managed lesson delivery, assignment creation, grading, and written feedback independently.</li>
+              <li>Built foundational calculus intuition through concrete examples and incremental problem-solving.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>Aug 2021–May 2024</time>
+          <div>
+            <h3>Teaching Assistant, Department of Latin</h3>
+            <p>Howard University · Washington, DC</p>
+            <ul>
+              <li>Designed and delivered lesson plans in the professor’s absence and introduced varied instructional techniques to improve student retention and engagement.</li>
+              <li>Proctored examinations, graded submissions, provided written feedback, and held weekly office hours and recitation sessions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>Sep 2023–May 2024</time>
+          <div>
+            <h3>Khan Academy Teaching Fellow</h3>
+            <p>Howard University · Washington, DC</p>
+            <ul>
+              <li>Tutored 25 high-school students in College Algebra through individualized sessions aimed at reducing failure rates.</li>
+              <li>Graded assignments and provided detailed feedback based on each learner’s needs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>Aug 2022–May 2023</time>
+          <div>
+            <h3>Student Tutor, Algebra, Calculus, and Pre-Calculus</h3>
+            <p>ACE Learning Support Services, Howard University · Washington, DC</p>
+            <ul>
+              <li>Supported over 70 students using clear, structured problem-solving methods.</li>
+              <li>Identified gaps in understanding and adapted explanations to each student’s level.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </details>
+
+    <details class="experience-group reveal">
+      <summary><span>Leadership and Activities</span><span>03 roles</span></summary>
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <time>2021–2022</time>
+          <div>
+            <h3>First-Year Representative</h3>
+            <p>Muslim Students’ Association, Howard University</p>
+            <ul>
+              <li>Advocated for more than 15 first-year students and helped plan more than 10 events for a community of over 400 members.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>2021–2022</time>
+          <div>
+            <h3>Secretary</h3>
+            <p>CHANGO Afro-Latino Organization, Howard University</p>
+            <ul>
+              <li>Maintained organizational records and supported communications and cultural programming.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <time>2022–2023</time>
+          <div>
+            <h3>Member, Engineers Without Borders</h3>
+            <p>Howard University</p>
+            <ul>
+              <li>Led chapter communications and coordinated updates for members.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </details>
+
+    <details class="experience-group reveal">
+      <summary><span>Community Service</span><span>01 program</span></summary>
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <time>March 2023</time>
+          <div>
+            <h3>Howard University Alternative Spring Break</h3>
+            <p>New Orleans, Louisiana · 60 service hours</p>
+            <ul>
+              <li>Tutored more than 25 students in an after-school program.</li>
+              <li>Led panels for students from underserved backgrounds about preparing for and attending college.</li>
+              <li>Participated in community service, including drainage cleanup in flood-prone areas.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </details>
+
+  </div>
+</section>
 
     <section class="about section-shell" id="about" aria-labelledby="about-title">
       <div class="about-copy reveal">
@@ -135,15 +309,53 @@
         <p>Teaching more than 95 students sharpened the same skill I use in research: meeting people where they are and making technical ideas useful.</p>
       </div>
       <div class="credentials reveal">
-        <div><span>Education</span><h3>M.A., Computational & Applied Mathematics & Operations Research</h3><p>Rice University · 2026</p></div>
-        <div><span>Foundation</span><h3>B.S., Mathematics</h3><p>Howard University · Summa Cum Laude · 2024</p></div>
-        <div><span>Selected distinctions</span><p>Capstone Scholar · Phi Beta Kappa · Pi Mu Epsilon · Artishia & Frederick Jordan Scholar</p></div>
+         <div>
+         <span>Rice University</span>
+         <h3>M.A., Computational & Applied Mathematics & Operations Research</h3>
+         <p>GPA: 3.76 · Houston, Texas · May 2026</p>
+         <p class="detail-text">Coursework: Modern Machine Learning, Bayesian Statistics, Stochastic Processes, Advanced Numerical Analysis, Natural Language Processing, and High-Performance Computing.</p>
       </div>
+
+      <div>
+         <span>Howard University</span>
+         <h3>B.S., Mathematics</h3>
+         <p>Minors in Computer Science, Chemistry, and Latin · GPA: 3.91 · Washington, DC · May 2024</p>
+         <p class="detail-text">Coursework: Data Structures and Algorithms, Real Analysis, Probability and Statistics II, Numerical Analysis, Chemistry II with Laboratory, Organic Chemistry II with Laboratory, and Physics I and II for Science and Engineering.</p>
+      </div>
+    </div>
       <div class="skills reveal" aria-label="Technical skills">
         <p class="eyebrow">Working toolkit</p>
         <div class="skill-cloud"><span>Python</span><span>R</span><span>SQL</span><span>MATLAB</span><span>C++</span><span>Statistical inference</span><span>Model evaluation</span><span>Feature engineering</span><span>MySQL</span><span>Git</span><span>Docker</span><span>Linux</span><span>Tableau</span><span>Medical imaging</span><span>Geospatial data</span></div>
       </div>
     </section>
+
+    <section class="recognition section-shell" id="recognition" aria-labelledby="recognition-title">
+  <div class="section-heading reveal">
+    <p class="eyebrow">Recognition and Memberships</p>
+    <h2 id="recognition-title">Scholarship, service, and academic community.</h2>
+  </div>
+
+  <div class="recognition-grid">
+
+    <div class="recognition-column reveal">
+      <h3>Honors and Awards</h3>
+      <article><span>Capstone Scholar</span><p>Received a $100,000 competitive scholarship based on scholarly achievement, community service, and leadership.</p></article>
+      <article><span>Artishia & Frederick Jordan Scholar</span><p>Received a $16,000 scholarship based on academic potential, character, and community service.</p></article>
+      <article><span>Pi Mu Epsilon Award</span><p>Recognized through the national mathematics honor society.</p></article>
+      <article><span>Summa Cum Laude, National Latin Exam</span><p>Placed among the top 5% of examination participants nationwide in 2021.</p></article>
+      <article><span>Alain Locke Award</span><p>Recognized for maintaining a 4.0 GPA as an undergraduate.</p></article>
+      <article><span>Additional Distinctions</span><p>Solveig Espelie Mathematics Scholar and Donald Cox Award recipient.</p></article>
+    </div>
+
+    <div class="recognition-column reveal">
+      <h3>Affiliations and Memberships</h3>
+      <article><span>Honor Societies</span><p>Phi Beta Kappa, Eta Sigma Phi, and Pi Mu Epsilon.</p></article>
+      <article><span>Professional Organizations</span><p>American Mathematical Society, Society of Women Engineers, and Association for Computing Machinery.</p></article>
+      <article><span>Service Organizations</span><p>Howard University Alternative Spring Break, Engineers Without Borders, Howard University Chapel, and Muslim Students’ Association.</p></article>
+    </div>
+
+  </div>
+</section>
 
     <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow reveal">Contact</p>
