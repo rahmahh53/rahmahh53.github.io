@@ -71,7 +71,7 @@ const notes = {
   seabed: {
     kicker: 'Geospatial modeling · Google-sponsored REU',
     title: 'Testing relationships across space',
-    body: '<p>Irregular measurements do not arrive as neat grids. I transformed 42,401 ocean-bed records into 15,345 analysis-ready nodes across 34 geographic blocks, engineered 19 features, and constructed a 104,368-edge spatial graph.</p><h3>Approach</h3><p>I compared seven graph definitions using 5–20-neighbor kNN and 10–50 km radius connectivity, then evaluated models on geographically held-out regions rather than randomly mixed observations.</p><h3>Result</h3><p>Graph-augmented gradient boosting reduced grain-size RMSE from 2.245 for a train-mean baseline to 2.097, a 6.6% reduction.</p>'
+    body: '<p>Irregular measurements do not arrive as neat grids. I transformed 42,401 Gulf of Mexico seabed records into 15,345 validated observations with 19 terrain and collection features across 34 geographic blocks.</p><h3>Approach</h3><p>I compared seven definitions of geographic proximity and used five geographically grouped folds so nearby observations could not leak between training and evaluation.</p><h3>Result</h3><p>Extra Trees achieved mean grain-size RMSE of 2.094, improving on the prior gradient-boosting model by 16.2% on average and outperforming it in every fold.</p>'
   },
   diabetes: {
     kicker: 'Population health · Howard University',
