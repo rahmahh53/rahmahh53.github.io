@@ -30,4 +30,8 @@
 .code-preview i{color:var(--accent);font-style:normal;text-align:center}
 .project-content{margin:0 0 auto}
 .project-links{display:flex;gap:1.2rem;flex-wrap:wrap}
+.experience-points{max-width:760px;margin:0;padding-left:1.15rem;color:var(--ink)}
+.experience-points li{margin:.62rem 0;padding-left:.25rem}
+.experience-points li::marker{color:var(--accent)}
+.experience-points sup{font-size:.65em;line-height:0}
 @media (max-width:800px){.project-card{min-height:0}.project-preview,.metric-preview,.code-preview{height:auto;min-height:190px}}
