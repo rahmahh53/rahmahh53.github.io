@@ -43,16 +43,16 @@
         <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
         <p class="panel-label">Evidence, not decoration</p>
         <div class="metric">
-          <strong class="metric-change"><span>+5.40</span><i aria-hidden="true">→</i><span>+0.03</span></strong>
-          <span>percentage-point measurement bias after out-of-sample evaluation</span>
+          <strong>99.4<small>%</small></strong>
+          <span>reduction in systematic measurement bias out of sample</span>
         </div>
         <div class="metric">
           <strong>66.3<small>%</small></strong>
           <span>role coherence at 10 for the production player-retrieval method</span>
         </div>
         <div class="metric">
-          <strong>88,513</strong>
-          <span>player-match observations transformed into a deployed scouting system</span>
+          <strong>16.2<small>%</small></strong>
+          <span>lower mean grain-size RMSE across five geographic folds</span>
         </div>
       </div>
       <a class="scroll-cue" href="#work"><span>Scroll to investigate</span><i aria-hidden="true"></i></a>
@@ -79,9 +79,9 @@
           <div class="project-content">
             <p class="project-type">Deployed ML system · Sports intelligence</p>
             <h3>Football scouting intelligence</h3>
-            <p>Built the complete decision pipeline from StatsBomb events and SQL feature engineering to comparative retrieval evaluation, an explainable API, and an interactive scouting application.</p>
+            <p>Built an end-to-end scouting system from 88,513 player-match observations, comparing four retrieval approaches before deploying an explainable recommendation API and interactive application.</p>
             <ul class="project-tags" aria-label="Methods"><li>Python</li><li>SQL</li><li>scikit-learn</li><li>FastAPI</li><li>Docker</li><li>AWS</li></ul>
-            <div class="project-result"><strong>66.3%</strong><span>role coherence@10 versus a 29.6% random baseline</span></div>
+            <div class="project-result"><strong>36.7%</strong><span>future-neighbor recall@10 across 1,925 players and nine competition-seasons</span></div>
           </div>
           <div class="project-links"><a class="text-link" href="https://football-scouting-intelligence.streamlit.app/" target="_blank" rel="noopener">Open live app <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/rahmahh53/Football_Player_Similarity_Analysis" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a></div>
         </article>
@@ -92,22 +92,22 @@
           <div class="project-content">
             <p class="project-type">Business intelligence · SQL analytics</p>
             <h3>Football performance intelligence</h3>
-            <p>Modeled event data in MySQL, validated analytical grain and joins in SQL and Python, and built Tableau views for passing, attacking output, progression, and role-aware player comparison.</p>
+            <p>Transformed 97,545 player-match records into 6,928 validated team-match observations and 144 competition-season profiles, then built a passing-control index to identify teams whose possession did or did not translate into attacking threat.</p>
             <ul class="project-tags" aria-label="Methods"><li>SQL</li><li>Python</li><li>MySQL</li><li>Tableau</li></ul>
-            <div class="project-result"><strong>3,463</strong><span>matches across 12 competitions and 3,600+ player profiles</span></div>
+            <div class="project-result"><strong>33</strong><span>decision-relevant profiles: 16 control-without-threat cases and 17 efficient attacking benchmarks</span></div>
           </div>
           <a class="text-link" href="https://github.com/rahmahh53/Football_Performance_Intelligence" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
         </article>
 
         <article class="project-card reveal" data-category="health ml analytics">
           <div class="project-index">03</div>
-          <div class="metric-preview" aria-hidden="true"><span>Bias</span><strong>+5.40 → +0.03</strong><i>Out-of-sample evaluation</i></div>
+          <div class="metric-preview" aria-hidden="true"><span>Systematic bias</span><strong>99.4% lower</strong><i>Out-of-sample evaluation</i></div>
           <div class="project-content">
             <p class="project-type">Graduate research · Medical imaging</p>
             <h3>Clinical cardiac measurement</h3>
-            <p>Linked approximately 18,000 AVI, DICOM, and CMR files and traced error across identifiers, metadata, preprocessing, measurement definitions, and calibration.</p>
+            <p>Reconciled approximately 18,000 DICOM studies, AVI clips, segmentation outputs, and cardiac MRI references, then reconstructed the physical image geometry lost during preprocessing.</p>
             <ul class="project-tags" aria-label="Methods"><li>Python</li><li>DICOM</li><li>Clinical data</li><li>Error analysis</li></ul>
-            <div class="project-result"><strong>9.74</strong><span>MAE after refinement, reduced from 11.39 percentage points</span></div>
+            <div class="project-result"><strong>14.5%</strong><span>lower EF mean absolute error, alongside 15.3% lower RMSE</span></div>
           </div>
           <button class="text-link project-detail" type="button" data-project="dicom">Read the case note <span aria-hidden="true">↗</span></button>
         </article>
@@ -151,16 +151,17 @@
           <a class="text-link" href="https://github.com/rahmahh53/computational_linear_algebra" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
         </article>
 
-        <article class="project-card reveal" data-category="health ml systems">
+        <article class="project-card reveal" data-category="health ml analytics">
           <div class="project-index">07</div>
-          <div class="code-preview" aria-hidden="true"><span>DICOM series</span><i>→</i><span>3D tensors</span><i>→</i><span>ResNet</span><i>→</i><span>OOF evaluation</span></div>
+          <div class="metric-preview" aria-hidden="true"><span>Held-out performance</span><strong>0.793 AUROC</strong><i>Temporal evaluation</i></div>
           <div class="project-content">
-            <p class="project-type">Medical imaging · Reproducible ML</p>
-            <h3>RSNA aneurysm detection pipeline</h3>
-            <p>Built a modular 14-label CTA workflow covering DICOM preprocessing, Hounsfield-unit conversion, anatomically correct augmentation, k-fold evaluation, inflated 3D ResNets, TorchScript export, and inference benchmarking.</p>
-            <ul class="project-tags" aria-label="Methods"><li>PyTorch</li><li>3D imaging</li><li>DICOM</li><li>Cross-validation</li></ul>
+            <p class="project-type">Population health · Predictive analytics</p>
+            <h3>Diabetes risk and subgroup evaluation</h3>
+            <p>Built a reproducible cohort of 17,345 adults from 39,156 participants, compared five risk models on a chronological holdout, and audited performance across 15 demographic groups.</p>
+            <ul class="project-tags" aria-label="Methods"><li>Python</li><li>Clinical data</li><li>Calibration</li><li>Subgroup analysis</li></ul>
+            <div class="project-result"><strong>89.5%</strong><span>sensitivity with 15.8% lower Brier error than full logistic regression</span></div>
           </div>
-          <a class="text-link" href="https://github.com/rahmahh53/rsna_intracranial_aneurysm_detection" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
+          <button class="text-link project-detail" type="button" data-project="diabetes">Read the case note <span aria-hidden="true">↗</span></button>
         </article>
       </div>
     </section>
@@ -171,10 +172,10 @@
         <h2 id="experience-title">Research shaped by rigor and real constraints.</h2>
       </div>
       <div class="timeline">
-        <article class="timeline-item reveal"><time>2024–2026</time><div><h3>Graduate Research Assistant</h3><p>Rice University · in collaboration with Houston Methodist</p><ul class="experience-points"><li>Developed a reproducible Python workflow linking approximately 18,000 clinical imaging files across AVI, DICOM, and CMR sources; reconciled identifiers, metadata, measurement definitions, and exclusion rules to create analysis-ready cohorts.</li><li>Investigated data, preprocessing, and calibration failures and refined the analytical method, reducing out-of-sample ejection-fraction bias from +5.40 to +0.03 percentage points and mean absolute error from 11.39 to 9.74.</li><li>Communicated methods, assumptions, limitations, and results through documented workflows, figures, presentations, and a master’s thesis for clinical and technical collaborators.</li></ul></div></article>
-        <article class="timeline-item reveal"><time>2023</time><div><h3>REU Research Assistant, Google-Sponsored</h3><p>Rice University</p><ul class="experience-points"><li>Transformed 42,401 irregular Gulf of Mexico seabed records into 15,345 analytical units with 19 terrain, collection, and spatial features for sediment characterization and seafloor mapping.</li><li>Designed geographically grouped cross-validation to prevent spatial leakage and selected Extra Trees after it achieved a mean RMSE of 2.094, outperforming gradient boosting in every fold by 16.2% on average.</li></ul></div></article>
-        <article class="timeline-item reveal"><time>2023</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University</p><ul class="experience-points"><li>Reconciled interview, examination, and laboratory records for 39,156 participants into a validated analytical cohort of 17,345 adults with 18 demographic, behavioral, and clinical predictors.</li><li>Compared five statistical and machine-learning models for prediabetes risk; the strongest held-out model achieved an AUROC of 0.793 and AUPRC of 0.743.</li><li>Assessed sensitivity, specificity, false-negative rates, and predictive performance across 15 demographic groups, translating subgroup findings and data limitations into research tables and figures.</li></ul></div></article>
-        <article class="timeline-item reveal"><time>2022</time><div><h3>Undergraduate Research Assistant, Department of Mathematics</h3><p>Howard University</p><ul class="experience-points"><li>Reproduced and validated a MATLAB kinetic-component pipeline across three 20-frame [<sup>11</sup>C]-(R)-PK11195 PET scans and 949,425 brain voxels, recovering archived component maps with 98.7%–99.99% agreement.</li><li>Designed blocked time-frame, leave-one-frame-out, and perturbation analyses; nested-selected ridge regularization reduced mean held-out RMSE by 7.95% and maintained coefficient-map correlations of 0.995–0.999 under 10% controlled intensity perturbation.</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2024–2026</time><div><h3>Graduate Research Assistant</h3><p>Rice University · in collaboration with Houston Methodist</p><ul class="experience-points"><li>Reconciled approximately 18,000 DICOM studies, AVI clips, segmentation outputs, and cardiac MRI references into a verified analytical cohort with documented linkage, exclusion, and measurement rules.</li><li>Reconstructed physically calibrated ventricular measurements and refined calibration, reducing EF mean absolute error by 14.5%, RMSE by 15.3%, and systematic bias by 99.4% out of sample.</li><li>Communicated methods, assumptions, results, and limitations through documented workflows, figures, presentations, and a master’s thesis.</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2023</time><div><h3>REU Research Assistant, Google-Sponsored</h3><p>Rice University</p><ul class="experience-points"><li>Joined 42,401 Gulf of Mexico seabed observations with bathymetry and engineered 19 terrain, spatial, and collection features for 15,345 validated locations across 34 geographic blocks.</li><li>Compared seven neighborhood definitions and competing models; Extra Trees reduced mean RMSE by 16.2% and outperformed prior boosting in all five geographic folds.</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2023</time><div><h3>Undergraduate Research Assistant</h3><p>Howard University</p><ul class="experience-points"><li>Integrated 13 interview, examination, and laboratory components into a validated cohort of 17,345 adults from 39,156 participants.</li><li>Compared five models on 4,115 held-out adults; gradient boosting achieved 0.793 AUROC, 0.743 AUPRC, 89.5% sensitivity, and 15.8% lower Brier error than full logistic regression.</li><li>Audited 15 demographic subgroups and identified an 11.2-point age-group AUROC gap.</li></ul></div></article>
+        <article class="timeline-item reveal"><time>2022</time><div><h3>Undergraduate Research Assistant, Department of Mathematics</h3><p>Howard University</p><ul class="experience-points"><li>Reproduced and validated a MATLAB kinetic-component pipeline across three 20-frame [<sup>11</sup>C]-(R)-PK11195 PET scans and 949,425 brain voxels, recovering archived component maps with 98.7%–99.99% agreement.</li><li>Stress-tested reference-tissue extraction; regularization reduced held-out RMSE by 7.95% and preserved 0.995–0.999 map correlations under 10% controlled intensity perturbation.</li></ul></div></article>
       </div>
     </section>
 
@@ -192,7 +193,7 @@
       </div>
       <div class="skills reveal" aria-label="Technical skills">
         <p class="eyebrow">Working toolkit</p>
-        <div class="skill-cloud"><span>Python</span><span>R</span><span>SQL</span><span>MATLAB</span><span>C++</span><span>Julia</span><span>Statistical inference</span><span>Model evaluation</span><span>Feature engineering</span><span>MySQL</span><span>FastAPI</span><span>Docker</span><span>AWS</span><span>GitHub Actions</span><span>Tableau</span><span>Medical imaging</span><span>Geospatial data</span></div>
+        <div class="skill-cloud"><span>Python</span><span>R</span><span>SQL</span><span>MATLAB</span><span>C++</span><span>Julia</span><span>Excel</span><span>PowerPoint</span><span>Statistical inference</span><span>Model evaluation</span><span>Feature engineering</span><span>PostgreSQL</span><span>MySQL</span><span>FastAPI</span><span>Docker</span><span>AWS</span><span>GitHub Actions</span><span>Tableau</span><span>Medical imaging</span><span>Geospatial data</span></div>
       </div>
     </section>
 
