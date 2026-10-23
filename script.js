@@ -66,12 +66,12 @@ const notes = {
   dicom: {
     kicker: 'Medical imaging · Rice University',
     title: 'Recovering the geometry behind a prediction',
-    body: '<p>Preprocessed echocardiographic videos had been separated from the physical scaling stored in their source DICOM files, preventing segmentation outputs from being interpreted as anatomically calibrated measurements.</p><h3>Approach</h3><p>I reconciled approximately 18,000 DICOM studies, AVI clips, segmentation outputs, and cardiac MRI references, then reconstructed the crop, resize, and padding geometry needed to restore physical scale.</p><h3>Result</h3><p>Refined calibration reduced ejection-fraction mean absolute error by 14.5%, RMSE by 15.3%, and systematic bias by 99.4% out of sample.</p>'
+    body: '<p>Preprocessed echocardiographic videos had been separated from the physical scaling stored in their source DICOM files, preventing segmentation outputs from being interpreted as anatomically calibrated measurements.</p><h3>Approach</h3><p>I reconciled approximately 18,000 cardiac imaging files across DICOM studies, AVI clips, segmentation outputs, and cardiac MRI references, then reconstructed the crop, resize, and padding geometry needed to restore physical scale.</p><h3>Result</h3><p>Validation on held-out cardiac MRI references showed 14.5% lower mean absolute error and 15.3% lower RMSE after the workflow was revised.</p>'
   },
   seabed: {
     kicker: 'Geospatial modeling · Google-sponsored REU',
     title: 'Testing relationships across space',
-    body: '<p>Irregular measurements do not arrive as neat grids. I joined 42,401 Gulf of Mexico seabed observations with bathymetry and produced 19 terrain, spatial, and collection features for 15,345 validated locations across 34 geographic blocks.</p><h3>Approach</h3><p>I compared seven definitions of geographic proximity and evaluated models across five geographically separated folds.</p><h3>Result</h3><p>Extra Trees reduced mean grain-size RMSE by 16.2% and outperformed the prior boosting model in every geographic fold.</p>'
+    body: '<p>Irregular measurements do not arrive as neat grids. I joined 42,401 seabed sediment observations with bathymetry and produced terrain, spatial, and collection features for 15,345 validated locations across 34 geographic blocks.</p><h3>Approach</h3><p>I compared seven definitions of geographic proximity and evaluated models across five geographically separated folds.</p><h3>Result</h3><p>Extra Trees reduced mean grain-size RMSE by 16.2% and outperformed the prior boosting model in every geographic fold.</p>'
   },
   diabetes: {
     kicker: 'Population health · Howard University',
